@@ -24,7 +24,9 @@ int main() {
 
     std::cout << "Division:" << std::endl;
     c = a.Divide(b);
-    c.Print(std::cout);
+    if(c.GetMod()) {
+        c.Print(std::cout);        
+    }
 
     if(a.IsEqual(b)) {
         std::cout << "Numbers are equal" << std::endl;

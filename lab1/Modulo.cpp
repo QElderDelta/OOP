@@ -45,7 +45,7 @@ Modulo Modulo::Divide(const Modulo& divisor) const {
     int x, y;
     if(ExtendedEuclid(divisor.number, mod, x, y) != 1) {
         std::cerr << "Divisor and aren't coprime, therefore division can't be made" << std::endl;
-        return {number, mod};
+        return {number, 0};
     }
     Modulo result;
     int ModInverse = (x % mod + mod) % mod;
@@ -73,6 +73,14 @@ void Modulo::SetNumber(int number) {
 
 void Modulo::SetMod(int mod) {
     this->mod = mod;
+}
+
+int Modulo::GetNumber() const {
+    return number;
+}
+
+int Modulo::GetMod() const {
+    return mod;
 }
 
 bool Modulo::IsEqual(const Modulo& to_compare) const {

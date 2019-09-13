@@ -17,6 +17,8 @@ class Modulo {
         void Print(std::ostream& os) const;
         void SetNumber(int number);
         void SetMod(int mod);
+        int GetNumber() const;
+        int GetMod() const;
         bool IsEqual(const Modulo& to_compare) const;
         bool IsGreater(const Modulo& to_compare) const;
         bool IsLess(const Modulo& to_compare) const;
