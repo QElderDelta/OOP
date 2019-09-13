@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Modulo.hpp"
+#include "modulo.hpp"
 
 int main() {
     Modulo a;
