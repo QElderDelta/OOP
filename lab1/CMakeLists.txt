@@ -4,7 +4,7 @@ project(lab1)
 
 add_executable(lab1
     main.cpp
-    Modulo.cpp
+    modulo.cpp
 )
 
 set_property(TARGET lab1 PROPERTY CXX_STANDARD 17)
