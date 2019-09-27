@@ -8,7 +8,7 @@
 class Modulo {
     public:
         Modulo() : number(0), mod(0) {}
-        Modulo(int number, int mod) : number(number < 0 ? mod + (number % mod) : number), mod(mod) {}
+        Modulo(int number, int mod) : number(number < 0 ? mod + (number % mod) : number % mod), mod(mod) {}
         Modulo Add(const Modulo& addend) const;
         Modulo Multiply(const Modulo& multiplier) const;
         Modulo Subtract(const Modulo& subtracthend) const;
